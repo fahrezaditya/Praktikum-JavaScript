@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kalkulator</title>
+    </head>
+    <script langue ="JavaScript">
+        function tambah(){
+            var x=parseFloat(document.kirim.x.value);
+            var y=parseFloat(document.kirim.y.value);
+            var z=x+y;
+            document.kirim.z.value=z;
+        }
+        function kurang(){
+            var x=parseFloat(document.kirim.x.value);
+            var y=parseFloat(document.kirim.y.value);
+            var z=x-y;
+            document.kirim.z.value=z;
+        }
+        function kali(){
+            var x=parseFloat(document.kirim.x.value);
+            var y=parseFloat(document.kirim.y.value);
+            var z=x*y;
+            document.kirim.z.value=z;
+        }
+        function bagi(){
+            var x=parseFloat(document.kirim.x.value);
+            var y=parseFloat(document.kirim.y.value);
+            var z=x/y;
+            document.kirim.z.value=z;
+        }
+    </script>
+    <body>
+        <form method="POST" name="kirim">
+            <p>Bil 1 : <input type="number" name="x"></p>
+            <p>Bil 2 : <input type="number" name="y"></p>
+            <p>Hasil : <input type="number" name="z"></p>
+            <tr>
+                <td colspan="4" align="center">
+                    <input type="button" value="  +  " onclick=tambah()>
+                    <input type="button" value="  -  " onclick=kurang()>
+                    <input type="button" value="  *  " onclick=kali()>
+                    <input type="button" value="  /  " onclick=bagi()>
+                </td>
+            </tr>
+        </form>
+    </body>
+</html>
